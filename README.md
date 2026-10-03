@@ -27,9 +27,13 @@ App Store Connect.
 
 ## Before enabling Pages
 
-1. **Replace the support email.** `support.html` ships with the placeholder
-   `REPLACE-ME@example.com`. Decide which address to publish and swap it in —
-   `sync-privacy.sh` warns while the placeholder is still present.
+1. **Check the Google Group's settings.** Support mail goes to
+   `rubenscube@googlegroups.com`. Two defaults will break it:
+   - *Who can post* excludes outsiders by default, so mail from users bounces.
+     Set it to allow anyone on the web, and moderate non-member posts for spam.
+   - *View topics* (archive visibility) is public by default, which would publish
+     support mail — including anything a parent writes about their family — on the
+     open web. Restrict it to members.
 2. Confirm `privacy.html` was generated from the profile you are actually submitting
    (see below). Its effective date is the date it was generated.
 
